@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block page_content %}
+<div class="col-md-8 offset-md-2">
+    <h1>Dashboard</h1>
+    <p>Hello, {{ user.username|default:'Guest' }}!</p>
+</div>
+{% endblock %}

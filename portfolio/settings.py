@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "projects",
     "blog",
+    "users",
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,8 @@ TEMPLATES = [
             os.path.join(BASE_DIR, 'templates'),  
             os.path.join(BASE_DIR, 'portfolio', 'templates'),  
             os.path.join(BASE_DIR, 'projects', 'templates'),  
-            os.path.join(BASE_DIR, 'blog', 'templates')  
+            os.path.join(BASE_DIR, 'blog', 'templates'),  
+            os.path.join(BASE_DIR, 'users', 'templates')  
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -89,22 +91,22 @@ DATABASES = {
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation"
-        + ".UserAttributeSimilarityValidator"
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation"
-        + ".MinimumLengthValidator"
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation"
-        + ".CommonPasswordValidator"
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation"
-        + ".NumericPasswordValidator"
-    },
+    # {
+    #     "NAME": "django.contrib.auth.password_validation"
+    #     + ".UserAttributeSimilarityValidator"
+    # },
+    # {
+    #     "NAME": "django.contrib.auth.password_validation"
+    #     + ".MinimumLengthValidator"
+    # },
+    # {
+    #     "NAME": "django.contrib.auth.password_validation"
+    #     + ".CommonPasswordValidator"
+    # },
+    # {
+    #     "NAME": "django.contrib.auth.password_validation"
+    #     + ".NumericPasswordValidator"
+    # },
 ]
 
 
