@@ -130,3 +130,4 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 LOGIN_REDIRECT_URL = "users_dashboard"
+LOGOUT_REDIRECT_URL = "users_dashboard"
