@@ -129,5 +129,10 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
+# Login
 LOGIN_REDIRECT_URL = "users_dashboard"
 LOGOUT_REDIRECT_URL = "users_dashboard"
+
+# SMTP server
+EMAIL_HOST = "localhost"
+EMAIL_PORT = 1025
