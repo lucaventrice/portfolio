@@ -5,4 +5,5 @@ from users import views
 
 urlpatterns = [
     path("", views.dashboard, name="users_dashboard"),
+    path("register/", views.register, name="register"),
 ] 
